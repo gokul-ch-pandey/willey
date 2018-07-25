@@ -1,0 +1,28 @@
+<mat-card class="contentCard" *ngIf="authService.isAuthenticated();">
+  <mat-tab-group>
+    <mat-tab *ngFor="let course of data" label="{{course.courseName}}">
+      <mat-card-header>
+        <mat-card-title><h1></h1></mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="course.courseImage" class="grid-course-image">
+      <mat-card-content>
+          <mat-accordion>
+              <mat-expansion-panel (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Questions
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    See {{course.courseName}} questions based on difficulty level.
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <mat-list role="list" *ngFor="let top of course.topic">
+                    <mat-list-item role="listitem">{{top.topicName}}</mat-list-item>
+                  </mat-list>
+              </mat-expansion-panel>
+            </mat-accordion>
+      </mat-card-content>
+    </mat-tab>
+  </mat-tab-group>
+  </mat-card>

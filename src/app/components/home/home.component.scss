@@ -1,0 +1,29 @@
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  button {
+    position: fixed;
+    bottom: 70px;
+    float: right;
+    right: 10px;
+    z-index: 10;
+  }
+
+  .slide_box_text{
+    position: absolute;
+    top: 43vh;
+    width: 100%;
+    float: left;
+    text-align: center;
+    left: 0;
+    z-index: 10;
+}
+
+.mat-button{
+  font-size: 1.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+  

@@ -1,0 +1,119 @@
+
+
+
+
+<!--
+<app-first-block></app-first-block>
+
+
+<app-card-block></app-card-block>
+<app-background-slant></app-background-slant>
+
+<app-second-block></app-second-block>
+
+<app-background-normal></app-background-normal>
+
+<app-third-block></app-third-block>
+
+<app-email-me></app-email-me>
+<app-background-email></app-background-email>
+-->
+<div>
+    <div>
+    <video autoplay="autoplay" src="assets/video/background.mp4" class="bigscreen myvideo" loop="loop" style="width:100%;"></video>
+    <div class="slide_box_text" style="position: absolute;
+    top: 43vh;
+    width: 100%;
+    float: left;
+    text-align: center;
+    left: 0;
+    z-index: 10;">
+            <h1 style="color: #fff;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;font-size: 3em">Take Interview Smartly<br>
+                With The Most Advanced Interview System</h1>
+            <h3 style="    font-size: 21px;
+            color: #fff;
+            margin: 30px 0 0;
+            letter-spacing: 1px;
+            font-weight: lighter; font-size: 2em;">Start The Journey</h3>
+        </div>
+    </div>   
+    
+    <div class="" style="width: 100%;
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 40.5vh;
+    text-align: center;">
+        <ul style="    width: auto;
+        background: #fff;
+        padding: 10px 120px;
+        display: inline-block;
+        max-width: 1080px;">
+        <button mat-button [matMenuTriggerFor]="animals">Services</button>        
+        <mat-menu #animals="matMenu">
+          <button mat-menu-item [matMenuTriggerFor]="vertebrates">Interview</button>
+          <button mat-menu-item >Reporting</button>
+        </mat-menu>
+        
+
+        <mat-menu #vertebrates="matMenu">
+                <button mat-menu-item >Fishes</button>
+                <button mat-menu-item >Amphibians</button>
+                <button mat-menu-item >Reptiles</button>
+                <button mat-menu-item>Birds</button>
+                <button mat-menu-item>Mammals</button>
+              </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="animals">Courses</button>        
+        <mat-menu #animals="matMenu">
+          <button mat-menu-item >Vertebrates</button>
+          <button mat-menu-item >Invertebrates</button>
+        </mat-menu>
+
+
+        <button mat-button [matMenuTriggerFor]="animals">About Us</button>        
+        <mat-menu #animals="matMenu">
+          <button mat-menu-item >Vertebrates</button>
+          <button mat-menu-item >Invertebrates</button>
+        </mat-menu>
+
+
+        <button mat-button [matMenuTriggerFor]="animals">How to Start</button>        
+        <mat-menu #animals="matMenu">
+          <button mat-menu-item>Vertebrates</button>
+          <button mat-menu-item>Invertebrates</button>
+        </mat-menu>
+
+        <button mat-button [matMenuTriggerFor]="animals">Contact Us</button>        
+        <mat-menu #animals="matMenu">
+          <button mat-menu-item >Vertebrates</button>
+          <button mat-menu-item >Invertebrates</button>
+        </mat-menu>
+    </ul>
+    </div>
+    
+    <!-- <mat-card class="example-card" style="margin:28px;">
+        <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+        <p>
+            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+            bred for hunting.
+        </p>
+        </mat-card-content>
+        <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card> -->
+</div>
+<!-- <button mat-raised-button class="mat-raised" style="float: right; background: #3ebb95;
+margin: 29px;" (click)="onToTop()">Top</button> -->
